@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WF SPORTS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('escudo-fluminense.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .product {
+            margin: 20px 0;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .buy-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #800000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #600000;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function redirectToWhatsApp() {
+            const phoneNumber = '5521967002955';  // Substitua pelo número de telefone desejado
+            const message = 'Olá, gostaria de comprar uma camisa da WF SPORTS, poderia me enviar o catálogo?';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WF SPORTS</h1>
+        </header>
+        <main>
+            <div class="product">
+                <img src="camisa-fluminense.jpg" alt="Camisa do Fluminense">
+                <h2>Camisa Oficial tricolor</h2>
+                <p>R$ 199,99</p>
+                <button class="buy-button" onclick="redirectToWhatsApp()">Comprar</button>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
+ </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1></h1>
+        </header>
+        <main>
+            <div class="product">
+                <img src="camisa-fluminense2.jpg" alt="Camisa do Fluminense">
+                <h2>Camisa Oficial cinza</h2>
+                <p>R$ 199,99</p>
+                <button class="buy-button" onclick="redirectToWhatsApp()">Comprar</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Loja de Camisas oficiais de clube</p>
+        </footer>
+    </div>
+</body>
+</html>
